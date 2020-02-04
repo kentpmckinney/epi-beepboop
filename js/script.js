@@ -1,7 +1,8 @@
-function generateNumberSeries(max) {
+function generateNumberSeries(max, name) {
 
   // Input validation
   if (!max || isNaN(max)) return null;
+  if (!name || name == "") name = "Dave";
 
   // Generate a number series from zero up to and including the input number
   let series = [];
@@ -12,7 +13,7 @@ function generateNumberSeries(max) {
 
   // Iterate through the array and conditionally map new values based on regex testing
   series = series.map(function(number){
-    if (/\d*3\d*/.test(number)) return "I'm sorry, Dave. I'm afraid I can't do that.";
+    if (/\d*3\d*/.test(number)) return `I'm sorry, ${name}. I'm afraid I can't do that.`;
     else if (/\d*2\d*/.test(number)) return "Boop!"
     else if (/\d*1\d*/.test(number)) return "Beep!"
     else return number;
@@ -24,7 +25,7 @@ function generateNumberSeries(max) {
 $(document).ready(function(){
 
   // Respond to key presses on the input field
-  $('#input').bind('keypress',function(e) {
+  $('#number').bind('keypress',function(e) {
     let event = e || window.event;
     let keycode = event.keyCode || event.which;
     let key = String.fromCharCode(keycode);
@@ -49,12 +50,13 @@ $(document).ready(function(){
     // $("#intro").hide();
 
     // Get and validate input from the user interface
-    let inputText = $("#input").val();
-    let inputNumber = parseInt(inputText);
+    let inputNumber = $("#number").val();
+    inputNumber = parseInt(inputNumber);
     if (inputNumber <= 0) return null;
+    let inputName = $("#name").val();
 
     // Perform business logic
-    let series = generateNumberSeries(inputNumber);
+    let series = generateNumberSeries(inputNumber, inputName);
     
     // Output number series to the user interface
     series.forEach(function(value){
