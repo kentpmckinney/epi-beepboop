@@ -1,11 +1,5 @@
 body {
   background: linear-gradient(black, #000066, #000066, black, #55C1DD);
-  text-align: center;
-}
-
-main {
-  display: grid;
-  grid-template-columns: auto;
 }
 
 input {
@@ -22,6 +16,9 @@ button {
 }
 
 #hal-container {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
   border-radius: 40px;
   background-color: #007777;
   width: 520px;
@@ -29,8 +26,7 @@ button {
   padding: 10px;
   color: yellow;
   font-family: monospace;
-  align-self: center;
-  grid-column: 1;
+  text-align: center;
 }
 
 #hal {
@@ -43,25 +39,29 @@ button {
   font-family: monospace;
 }
 
+#notice {
+  margin-top: 10px;
+}
+
 .stars {
-  position: absolute;
+  position: relative;
   background-color: white;
-  height: 4px;
-  width: 4px;
-  border-radius: 50%;
+  height: 3px;
+  width: 3px;
+  border-radius: 20%;
   animation-iteration-count: infinite;
 }
 
 .star-1 {
-  left: 100px;
-  top: 100px;
+  left: 3%;
+  top: 8%;
   animation-name: twinkle-1;
   animation-duration: 1s;
 }
 
 .star-2 {
-  left: 800px;
-  top: 100px;
+  left: 7%;
+  top: 300px;
   animation-name: twinkle-2;
   animation-duration: 2s;
 }
