@@ -1,8 +1,25 @@
-# epicodus-independent-project-1
+# Independent Project
+## Beep Boop
 
 
-Independent Project
-Beep Boop
+### Author: Kent McKinney
+### Program Name: Beep Boop
+### Copyright &copy; 2020 Kent McKinney. Released under the terms of the GPLv3 license.
+### Description: 
+### Detailed setup instructions:
+
+
+### Changelog:
+* 2/3/2020 7:30-9:00PM - Created skeleton project and pseudocode, updated the readme.md file
+
+
+### Specifications:
+The program returns a range of numbers from 0 to the users inputted number
+        Input: "4"
+        Output: "0, 1, 2, 3, 4"
+
+
+
 
 Create a web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions:
 
