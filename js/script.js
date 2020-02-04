@@ -24,13 +24,21 @@ function generateNumberSeries(max) {
 $(document).ready(function(){
 
   $("#form").submit(function(e){
-    $("#result").empty();
+    
+    // Clear existing data from the user interface$("#result").empty();
     let inputNumber = $("#text").val();
+
+    // Perform business logic
     let series = generateNumberSeries(inputNumber);
-    console.log(series)
-    let span = document.createElement("span")
-    span.innerText = `Result: ${'33'}`;
-    $("#result").append(span);
+    
+    // Output number series to the user interface
+    series.forEach(function(value){
+      let div = document.createElement("div")
+      div.innerText = `${value}`;
+      $("#result").append(div);
+    });
+
+    // Prevent screen refresh on form submission
     e.preventDefault();
   });
 
