@@ -25,7 +25,9 @@ $(document).ready(function(){
 
   $("#form").submit(function(e){
     
-    // Clear existing data from the user interface$("#result").empty();
+    // Clear existing data from the user interface
+    $("#hal").empty();
+
     let inputNumber = $("#text").val();
 
     // Perform business logic
@@ -35,7 +37,7 @@ $(document).ready(function(){
     series.forEach(function(value){
       let div = document.createElement("div")
       div.innerText = `${value}`;
-      $("#result").append(div);
+      $("#hal").append(div);
     });
 
     // Prevent screen refresh on form submission

@@ -1,12 +1,81 @@
 body {
-  background-color: black;
-  align-content: center;
+  background: linear-gradient(black, #000066, #000066, black, #55C1DD);
+  text-align: center;
 }
 
-#result {
-  background-color: darkgreen;
+main {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+input {
+  border-radius: 10px;
+  background-color: #004444;
+  font-family: monospace;
+  padding-left: 10px;
+}
+
+button {
+  border-radius: 10px;
+  background-color: #004444;
+  font-family: monospace;
+}
+
+#hal-container {
+  border-radius: 40px;
+  background-color: #007777;
+  width: 520px;
+  height: 580px;
+  padding: 10px;
+  color: yellow;
+  font-family: monospace;
+  align-self: center;
+  grid-column: 1;
+}
+
+#hal {
+  text-align: left;
+  padding: 20px;
+  background-color: #004444;
+  border-radius: 40px;
   width: 500px;
   height: 500px;
   font-family: monospace;
-  color: white;
+}
+
+.stars {
+  position: absolute;
+  background-color: white;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+}
+
+.star-1 {
+  left: 100px;
+  top: 100px;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+}
+
+.star-2 {
+  left: 800px;
+  top: 100px;
+  animation-name: twinkle-2;
+  animation-duration: 2s;
+}
+
+@keyframes twinkle-1 {
+  20% {
+    transform: scale(0.25);
+    opacity: 0.3;
+  }
+}
+
+@keyframes twinkle-2 {
+  20% {
+    transform: scale(0.25);
+    opacity: 0.3;
+  }
 }
