@@ -1,17 +1,24 @@
 function generateNumberSeries(max) {
+
+  // Input validation
   if (!max || isNaN(max)) return null;
-    /* //Generate a number series
-       let series = [];
-       for (let i = 0; i < max; i++) {
-         series.push(str(i));
-       }
-       // Replace numbers containing 3, 2, or 1 with the appropriate strings
-       // Apply rules with the following order of precedence: 3, 2, 1
-       .map(value => 
-           /\d*3\d*`/.test  "I'm sorry, Dave. I'm afraid I can't do that."
-           /\d*2\d*`/.test  "Boop!"
-           /\d*1\d*`/.test  "Beep!
-    */
+
+  // Generate a number series from zero up to and including the input number
+  let series = [];
+  for (let i = 0; i <= max; i++) {
+    let number = i.toString();
+    series.push(number);
+  }
+
+  // Iterate through the array and conditionally map new values based on regex testing
+  series = series.map(function(number){
+    if (/\d*3\d*/.test(number)) return "I'm sorry, Dave. I'm afraid I can't do that.";
+    else if (/\d*2\d*/.test(number)) return "Boop!"
+    else if (/\d*1\d*/.test(number)) return "Beep!"
+    else return number;
+  });
+
+  return series;
 }
 
 $(document).ready(function(){
