@@ -14,7 +14,7 @@
 ### Changelog:
 * 2/3/2020 - Created skeleton project and pseudocode, updated the readme.md file (1.5 hours)
 * 2/4/2020 - Updated readme.md, implement business logic, implement basic user interface features (1 hour)
-* 2/4/2020 - Enhanced the user interface (1 hour)
+* 2/4/2020 - Enhanced the user interface (2 hours)
 
 
 ### Specifications:

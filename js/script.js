@@ -23,12 +23,35 @@ function generateNumberSeries(max) {
 
 $(document).ready(function(){
 
+  // Respond to key presses on the input field
+  $('#input').bind('keypress',function(e) {
+    let event = e || window.event;
+    let keycode = event.keyCode || event.which;
+    let key = String.fromCharCode(keycode);
+
+    // Respond to the ENTER key
+    if(keycode == '13') $("#form").submit();
+
+    // Filter out key presses for invalid characters
+    let invalid = /\D/;
+    if (invalid.test(key)) {
+        e.preventDefault();
+        return;
+    }
+  });
+
   $("#form").submit(function(e){
     
     // Clear existing data from the user interface
-    $("#hal").empty();
+    $("#hal-display").empty();
 
-    let inputNumber = $("#text").val();
+    // Hide the introductory text
+    // $("#intro").hide();
+
+    // Get and validate input from the user interface
+    let inputText = $("#input").val();
+    let inputNumber = parseInt(inputText);
+    if (inputNumber <= 0) return null;
 
     // Perform business logic
     let series = generateNumberSeries(inputNumber);
@@ -37,7 +60,7 @@ $(document).ready(function(){
     series.forEach(function(value){
       let div = document.createElement("div")
       div.innerText = `${value}`;
-      $("#hal").append(div);
+      $("#hal-display").append(div);
     });
 
     // Prevent screen refresh on form submission
