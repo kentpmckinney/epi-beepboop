@@ -55,8 +55,8 @@ button {
   height: 420px;
 }
 
-.stars {
-  position: relative;
+.star {
+  position: absolute;
   background-color: white;
   height: 3px;
   width: 3px;

@@ -24,27 +24,27 @@ function generateNumberSeries(max, name) {
 
 function rand(max) { return Math.floor(Math.random() * (max+1)); }
 
-function createStarrySky(count) {
+function createStar() {
 
-  // Input validation
-  if (!count || isNaN(count) || !count > 0) return null;
-
-  // Create random numbers
-  let style = rand(1);
-  
-
-  let body = document.getElementsByTagName('body')[0];
-  let div = document.createElement('div');
-  div.className = "star star-1";
-  // div.style.left = 
+  // Create a star with random attributes
+  let star = $("<div />");
+  star.addClass("star");
+  star.css("animation-name", rand(1) ? "twinkle-1" : "twinkle-2");
+  star.css("animation-duration", `${rand(5)}s`);
+  star.css("top", rand($(window).height()));
+  star.css("left", rand($(window).width()));
+  star.css("z-index", -1);
+  console.log(star)
+  $("body").append(star);
 
 }
 
 $(document).ready(function(){
 
   // Create a starry sky
-  createStarrySky(3)
-
+  for (let i = 0; i < 100; i++) {
+    createStar();
+  }
 
   // Respond to key presses on the input field
   $('#number').bind('keypress',function(e) {
