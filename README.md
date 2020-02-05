@@ -1,15 +1,21 @@
 # Independent Project
 ## The Beep Boop Program
+https://github.com/kentpmckinney/epicodus-independent-project-1
 
-### Author: Kent McKinney
-### Copyright &copy; 2020 Kent McKinney
-### License: GPLv3
-### Description:
+##### Author: Kent McKinney - [GitHub](https://github.com/kentpmckinney)
+##### Copyright &copy; 2020 Kent McKinney
+##### License: GPLv3
+##### Description:
 
-`This program accepts a number and returns a number series with a range from 0 to the given number. HAL is resisting the efforts of the user of this application, with output messed up accordingly.`
+``This program accepts a number and returns a number series with a range from 0 to the given number. HAL is resisting the efforts of the user of this application, with output messed up accordingly.``
+
+### Prerequisites:
+* ``git`` must be installed and available
+* a recent version of ``firefox``, ``chrome``, or ``safari`` must be available
 
 ### Setup Instructions:
-    1. TODO
+    1. Run the command: git clone https://github.com/kentpmckinney/epicodus-independent-project-1.git
+    2. Navigate to the repository folder and run the file index.html in a browser
 
 ### Changelog:
 * 2/3/2020 - Created skeleton project and pseudocode, updated the readme.md file (1.5 hours)
@@ -19,41 +25,26 @@
 * 2/4/2020 - Explored starry sky theme (0.5 hours)
 * 2/5/2020 - Refactored code (1 hour)
 * 2/5/2020 - Added variety to star attributes (0.5 hours)
+* 2/5/2020 - Performed QA assessment and refactoring (1 hour)
+
 
 ### Specifications:
 
-* `Return a range of numbers from 0 to the input number with the following exceptions:`
-    * `Numbers that contain a 3: all digits are replaced with "I'm sorry, Dave. I'm afraid I can't do that." Takes precedence over the rules for numbers containing 1 and 2.`
-    * `Numbers that contain a 2: all digits are replaced with "Boop!". Takes precedence over the rule for numbers containing 1.`
-    * `Numbers that contain a 1: all digits are replaced with "Beep!"`
-    * `Example: Input: 5, Output: "0", "Beep!", "Boop", "I'm Sorry...", 4, 5.`
-* `A user should be able to enter a new number and see new results over and over again.`
+| Spec | Input | Output |
+| :------------- | :------------- | :------------- |
+| **Rule: output numbers that contain a 3 are replaced with text** | All Digits (Takes precedence over the rules for numbers containing 1 and 2) | "I'm sorry, Dave. I'm afraid I can't do that." |
+| **Rule: output numbers that contain a 2 are replaced with text** | All Digits (Takes precedence over the rule for numbers containing 1) | "Boop!" |
+| **Rule: output numbers that contain a 1 are replaced with text** | All Digits | "Beep!" |
+| **Program accepts a positive integer greater than or equal to zero and returns a series from 0 to the input number with exceptions listed below** | 5 | "0", "Beep!", "Boop", "I'm Sorry...", 4, 5 |
+| **Program handles empty or invalid number and presents an error messages to the user** | "" | "Error: Invalid number entered","Please try again" |
+| **Program accepts a user name and personalizes output** | 3, 'Kent' | "0", "Beep!", "Boop", "I'm sorry, Kent. I'm afraid I can't do that." |
+| **Program replaces an empty or invalid user name with a default name** | "" | "Dave" |
 
-* `If you finish meeting the objectives for this project, consider adding additional features, such as:`
-    * `Add images, styling, and custom animations.
-    Implement different behaviors/effects/images for different inputs.`
-    * `Include an option that returns the output in reversed order (beginning with the largest number).`
-    * `Add a second form field that takes a name. For numbers that are divisible by 3, replace the name Dave in "I'm sorry, Dave. I'm afraid I can't do that" with the name provided by the user.`
 
-Objectives
+* `Include an option that returns the output in reversed order (beginning with the largest number).`
 
-<hr>
+Project is in a presentable, portfolio-quality state.
+Code is clean, well-refactored, and easy-to-read. This includes correct indentation, spacing, and including only necessary comments and debugging tools.
+Variable names are descriptive and use lower camel case (e.g. myVariableExample).
+Commits are made regularly with clear messages that finish the phrase "It will…".
 
-Your code will be reviewed for the following objectives:
-
-    JavaScript business logic and user interface logic are separate.
-    Logic is broken down into "plain English" specs, listed in README.
-    Application implements a loop and works as expected.
-    The user can use the app repeatedly and see new results.
-    All previous objectives have been met.
-    Required functionality is in place by Friday deadline.
-    Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
-
-Previous Objectives
-
-For reference, here are the standards from previous weeks that your app needs to meet this week:
-
-    Project is in a presentable, portfolio-quality state.
-    Code is clean, well-refactored, and easy-to-read. This includes correct indentation, spacing, and including only necessary comments and debugging tools.
-    Variable names are descriptive and use lower camel case (e.g. myVariableExample).
-    Commits are made regularly with clear messages that finish the phrase "It will…".

@@ -10,8 +10,9 @@
 function generateNumberSeries(max, name) {
 
   // Input validation
-  if (!max || isNaN(max)) return null;
-  if (!name || name == "") name = "Dave";
+  max = parseInt(max);
+  if (max === null || isNaN(max)) return ["Error: Invalid number entered","Please try again"];
+  if (name === null || name == "") name = "Dave";
 
   // Generate a number series from zero up to and including the input number
   let series = [];
@@ -59,7 +60,6 @@ function createStar() {
   star.css("left", rand($(window).width()));
   star.css("height", `${size}px`);
   star.css("width", `${size}px`);
-  console.log(`hsla(250, 250, 250, ${rand(10)/10})`);
   star.css("background-color", `hsla(60, 100%, 50%, ${rand(10)/10+0.01})`);
   star.css("z-index", -1);
   return star;
@@ -67,7 +67,7 @@ function createStar() {
 
 
 /*
-  Executes after the page loads
+  $(document).ready() executes after the page loads
 */
 $(document).ready(function(){
 
@@ -109,14 +109,12 @@ $(document).ready(function(){
   */
   $("#form").submit(function(e){
     
+    // Get input from the user interface
+    let inputNumber = $("#number").val();
+    let inputName = $("#name").val();
+
     // Clear existing output text from the user interface
     $("#hal-display").empty();
-
-    // Get and validate input from the user interface
-    let inputNumber = $("#number").val();
-    inputNumber = parseInt(inputNumber);
-    if (inputNumber <= 0) return null;
-    let inputName = $("#name").val();
 
     // Perform business logic
     let series = generateNumberSeries(inputNumber, inputName);
