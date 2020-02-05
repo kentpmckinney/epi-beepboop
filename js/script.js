@@ -7,12 +7,12 @@
   Creates a number series
   HAL messes with the output by replacing certain numbers with text messages
 */
-function generateNumberSeries(max, name) {
-
+function generateNumberSeries(max, name, sortDescending) {
   // Input validation
   max = parseInt(max);
   if (max === null || isNaN(max)) return ["Error: Invalid number entered","Please try again"];
   if (name === null || name == "") name = "Dave";
+  let reverse = sortDescending ? true : false;
 
   // Generate a number series from zero up to and including the input number
   let series = [];
@@ -28,6 +28,9 @@ function generateNumberSeries(max, name) {
     else if (/\d*1\d*/.test(number)) return "Beep!"
     else return number;
   });
+
+  // Reverse the series if sortDescending is true
+  if (reverse) series.reverse();
 
   return series;
 }
@@ -77,9 +80,9 @@ $(document).ready(function(){
     Create a starry sky
   */
   $(window).on('resize', function(){
-    $("#star-container").empty();
+    $("#starContainer").empty();
     for (let i = 0; i < 100; i++) {
-      $("#star-container").append(createStar());
+      $("#starContainer").append(createStar());
     }
   });
 
@@ -108,22 +111,22 @@ $(document).ready(function(){
     Responds to presses of the submit button
   */
   $("#form").submit(function(e){
-    
     // Get input from the user interface
     let inputNumber = $("#number").val();
     let inputName = $("#name").val();
+    let sortDescending = $("#sortIcon").html() === `↓` ? true : false;
 
     // Clear existing output text from the user interface
-    $("#hal-display").empty();
+    $("#halDisplay").empty();
 
     // Perform business logic
-    let series = generateNumberSeries(inputNumber, inputName);
+    let series = generateNumberSeries(inputNumber, inputName, sortDescending);
     
     // Output number series to the user interface
     series.forEach(function(value){
       let div = document.createElement("div")
       div.innerText = `${value}`;
-      $("#hal-display").append(div);
+      $("#halDisplay").append(div);
     });
 
     // Prevent screen refresh on form submission
@@ -131,7 +134,21 @@ $(document).ready(function(){
   });
 
 
+  /*
+    Responds to clicks on the sort icon
+  */
+ $("#sortIcon").click(function(e){
+   if ($("#sortIcon").html() === `↓`)
+    $("#sortIcon").html(`↑`);
+   else 
+    $("#sortIcon").html(`↓`);
+ });
+
   // Trigger the window resize event
   $(window).trigger('resize');
+
+  // Add an "up" arrow icon to the input field
+
+//  $("#number").append("<span>&#8593;</span>");
 
 });

@@ -10,12 +10,12 @@ https://github.com/kentpmckinney/epicodus-independent-project-1
 ``This program accepts a number and returns a number series with a range from 0 to the given number. HAL is resisting the efforts of the user of this application, with output messed up accordingly.``
 
 ### Prerequisites:
-* ``git`` must be installed and available
-* a recent version of ``firefox``, ``chrome``, or ``safari`` must be available
+* ``git`` must be installed
+* a recent version of ``firefox``, ``chrome``, or ``safari`` must be installed
 
 ### Setup Instructions:
     1. Run the command: git clone https://github.com/kentpmckinney/epicodus-independent-project-1.git
-    2. Navigate to the repository folder and run the file index.html in a browser
+    2. Navigate to the repository folder and open or run the file index.html in a code editor or web browser
 
 ### Changelog:
 * 2/3/2020 - Created skeleton project and pseudocode, updated the readme.md file (1.5 hours)
@@ -39,7 +39,7 @@ https://github.com/kentpmckinney/epicodus-independent-project-1
 | **Program handles empty or invalid number and presents an error messages to the user** | "" | "Error: Invalid number entered","Please try again" |
 | **Program accepts a user name and personalizes output** | 3, 'Kent' | "0", "Beep!", "Boop", "I'm sorry, Kent. I'm afraid I can't do that." |
 | **Program replaces an empty or invalid user name with a default name** | "" | "Dave" |
-
+| **Program adds a sort up/down arrow icon and reverses the order of output if the arrow is down** | arrow icon is down | output starts at the highest number |
 
 * `Include an option that returns the output in reversed order (beginning with the largest number).`
 
