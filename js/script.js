@@ -51,11 +51,16 @@ function rand(max) { return Math.floor(Math.random() * (max+1)); }
 */
 function createStar() {
   let star = $("<div />");
+  let size = rand(2)+1;
   star.addClass("star");
   star.css("animation-name", `star-style-${rand(3)}`);
   star.css("animation-duration", `${rand(5)}s`);
   star.css("top", rand($(window).height()));
   star.css("left", rand($(window).width()));
+  star.css("height", `${size}px`);
+  star.css("width", `${size}px`);
+  console.log(`hsla(250, 250, 250, ${rand(10)/10})`);
+  star.css("background-color", `hsla(60, 100%, 50%, ${rand(10)/10+0.01})`);
   star.css("z-index", -1);
   return star;
 }

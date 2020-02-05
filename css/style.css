@@ -68,9 +68,6 @@ button {
 
 .star {
   position: absolute;
-  background-color: white;
-  height: 3px;
-  width: 3px;
   border-radius: 20%;
   animation-iteration-count: infinite;
 }
