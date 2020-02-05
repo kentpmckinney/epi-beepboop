@@ -26,7 +26,7 @@ https://github.com/kentpmckinney/epicodus-independent-project-1
 * 2/5/2020 - Refactored code (1 hour)
 * 2/5/2020 - Added variety to star attributes (0.5 hours)
 * 2/5/2020 - Performed QA assessment and refactoring (1 hour)
-
+* 2/5/2020 - Added feature to reverse output direction (1 hour)
 
 ### Specifications:
 
