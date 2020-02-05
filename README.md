@@ -27,6 +27,7 @@ https://github.com/kentpmckinney/epicodus-independent-project-1
 * 2/5/2020 - Added variety to star attributes (0.5 hours)
 * 2/5/2020 - Performed QA assessment and refactoring (1 hour)
 * 2/5/2020 - Added feature to reverse output direction (1 hour)
+* 2/5/2020 - Performed additional QA refactoring (0.5 hours)
 
 ### Specifications:
 
@@ -40,11 +41,6 @@ https://github.com/kentpmckinney/epicodus-independent-project-1
 | **Program accepts a user name and personalizes output** | 3, 'Kent' | "0", "Beep!", "Boop", "I'm sorry, Kent. I'm afraid I can't do that." |
 | **Program replaces an empty or invalid user name with a default name** | "" | "Dave" |
 | **Program adds a sort up/down arrow icon and reverses the order of output if the arrow is down** | arrow icon is down | output starts at the highest number |
-
-* `Include an option that returns the output in reversed order (beginning with the largest number).`
-
-Project is in a presentable, portfolio-quality state.
-Code is clean, well-refactored, and easy-to-read. This includes correct indentation, spacing, and including only necessary comments and debugging tools.
-Variable names are descriptive and use lower camel case (e.g. myVariableExample).
-Commits are made regularly with clear messages that finish the phrase "It will…".
-
+| **Program cancels keypresses to the input field that are not numbers** | non-numeric charcters | do not get entered into the number input field |
+| **Program responds to the ENTER key in the number input field** | ENTER | does the same thing as the Submit button |
+| **Program clears old output prior to displaying new output** | old output | gets cleared when new output is displayed |

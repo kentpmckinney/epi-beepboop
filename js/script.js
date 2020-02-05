@@ -147,8 +147,4 @@ $(document).ready(function(){
   // Trigger the window resize event
   $(window).trigger('resize');
 
-  // Add an "up" arrow icon to the input field
-
-//  $("#number").append("<span>&#8593;</span>");
-
 });
