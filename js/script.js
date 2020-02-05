@@ -22,7 +22,29 @@ function generateNumberSeries(max, name) {
   return series;
 }
 
+function rand(max) { return Math.floor(Math.random() * (max+1)); }
+
+function createStarrySky(count) {
+
+  // Input validation
+  if (!count || isNaN(count) || !count > 0) return null;
+
+  // Create random numbers
+  let style = rand(1);
+  
+
+  let body = document.getElementsByTagName('body')[0];
+  let div = document.createElement('div');
+  div.className = "star star-1";
+  // div.style.left = 
+
+}
+
 $(document).ready(function(){
+
+  // Create a starry sky
+  createStarrySky(3)
+
 
   // Respond to key presses on the input field
   $('#number').bind('keypress',function(e) {
@@ -43,11 +65,8 @@ $(document).ready(function(){
 
   $("#form").submit(function(e){
     
-    // Clear existing data from the user interface
+    // Clear existing output text from the user interface
     $("#hal-display").empty();
-
-    // Hide the introductory text
-    // $("#intro").hide();
 
     // Get and validate input from the user interface
     let inputNumber = $("#number").val();
