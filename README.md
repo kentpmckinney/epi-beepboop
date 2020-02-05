@@ -17,6 +17,7 @@
 * 2/4/2020 - Enhanced the user interface (2 hours)
 * 2/4/2020 - Adds user name feature (0.5 hours)
 * 2/4/2020 - Explored starry sky theme (0.5 hours)
+* 2/5/2020 - Refactored code (1 hour)
 
 
 ### Specifications:

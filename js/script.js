@@ -1,3 +1,12 @@
+/* ****************************************************************************************
+  BUSINESS LOGIC
+*/
+
+
+/*
+  Creates a number series
+  HAL messes with the output by replacing certain numbers with text messages
+*/
 function generateNumberSeries(max, name) {
 
   // Input validation
@@ -22,31 +31,57 @@ function generateNumberSeries(max, name) {
   return series;
 }
 
+
+/*
+  Generates a random number from zero to max
+*/
 function rand(max) { return Math.floor(Math.random() * (max+1)); }
 
-function createStar() {
 
-  // Create a star with random attributes
+
+
+
+/* ****************************************************************************************
+  USER INTERFACE
+*/
+
+
+/*
+  Creates a star with random attributes
+*/
+function createStar() {
   let star = $("<div />");
   star.addClass("star");
-  star.css("animation-name", rand(1) ? "twinkle-1" : "twinkle-2");
+  star.css("animation-name", `star-style-${rand(3)}`);
   star.css("animation-duration", `${rand(5)}s`);
   star.css("top", rand($(window).height()));
   star.css("left", rand($(window).width()));
   star.css("z-index", -1);
-  console.log(star)
-  $("body").append(star);
-
+  return star;
 }
 
+
+/*
+  Executes after the page loads
+*/
 $(document).ready(function(){
 
-  // Create a starry sky
-  for (let i = 0; i < 100; i++) {
-    createStar();
-  }
 
-  // Respond to key presses on the input field
+  /* 
+    Responds to window resizes
+    Create a starry sky
+  */
+  $(window).on('resize', function(){
+    $("#star-container").empty();
+    for (let i = 0; i < 100; i++) {
+      $("#star-container").append(createStar());
+    }
+  });
+
+
+  /*
+    Responds to key presses on the input field
+  */
   $('#number').bind('keypress',function(e) {
     let event = e || window.event;
     let keycode = event.keyCode || event.which;
@@ -63,6 +98,10 @@ $(document).ready(function(){
     }
   });
 
+
+  /*
+    Responds to presses of the submit button
+  */
   $("#form").submit(function(e){
     
     // Clear existing output text from the user interface
@@ -87,5 +126,9 @@ $(document).ready(function(){
     // Prevent screen refresh on form submission
     e.preventDefault();
   });
+
+
+  // Trigger the window resize event
+  $(window).trigger('resize');
 
 });

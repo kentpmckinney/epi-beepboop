@@ -7,6 +7,17 @@ html {
   min-height: 100%;
 }
 
+header {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  animation-name: fade-out;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
 input {
   border-radius: 10px;
   background-color: #004444;
@@ -64,30 +75,39 @@ button {
   animation-iteration-count: infinite;
 }
 
-.star-1 {
-  /* left: 3%;
-  top: 8%; */
-  animation-name: twinkle-1;
-  animation-duration: 1s;
-}
-
-.star-2 {
-  /* left: 7%;
-  top: 100px; */
-  animation-name: twinkle-2;
-  animation-duration: 2s;
-}
-
-@keyframes twinkle-1 {
+@keyframes star-style-0 {
   30% {
     transform: scale(0.25);
     opacity: 0.3;
   }
 }
 
-@keyframes twinkle-2 {
+@keyframes star-style-1 {
   50% {
     transform: scale(0.25);
-    opacity: 0.3;
+    opacity: 0.1;
+  }
+}
+
+@keyframes star-style-2 {
+  10% {
+    transform: scale(0.15);
+    opacity: 0.05;
+  }
+}
+
+@keyframes star-style-3 {
+  80% {
+    transform: scale(0.55);
+    opacity: 0.7;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
