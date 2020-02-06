@@ -32,6 +32,10 @@ button {
   font-family: monospace;
 }
 
+#intro {
+  scrollbar-color: transparent;
+}
+
 #sortIcon {
   font-size: 18pt;
   cursor: pointer;

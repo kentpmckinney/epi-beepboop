@@ -7,7 +7,7 @@ https://github.com/kentpmckinney/epicodus-independent-project-1
 ##### License: GPLv3
 ##### Description:
 
-``This program accepts a number and returns a number series with a range from 0 to the given number. HAL is resisting the efforts of the user of this application, with output messed up accordingly.``
+``This program accepts a number (and optionally a user name) and returns a number series with a range from 0 to the given number. HAL is resisting the efforts of the user of this application, with output messed up accordingly.``
 
 ### Prerequisites:
 * ``git`` must be installed
@@ -36,9 +36,9 @@ https://github.com/kentpmckinney/epicodus-independent-project-1
 | **Rule: output numbers that contain a 3 are replaced with text** | All Digits (Takes precedence over the rules for numbers containing 1 and 2) | "I'm sorry, Dave. I'm afraid I can't do that." |
 | **Rule: output numbers that contain a 2 are replaced with text** | All Digits (Takes precedence over the rule for numbers containing 1) | "Boop!" |
 | **Rule: output numbers that contain a 1 are replaced with text** | All Digits | "Beep!" |
-| **Program accepts a positive integer greater than or equal to zero and returns a series from 0 to the input number with exceptions listed below** | 5 | "0", "Beep!", "Boop", "I'm Sorry...", 4, 5 |
-| **Program handles empty or invalid number and presents an error messages to the user** | "" | "Error: Invalid number entered","Please try again" |
-| **Program accepts a user name and personalizes output** | 3, 'Kent' | "0", "Beep!", "Boop", "I'm sorry, Kent. I'm afraid I can't do that." |
+| **Program accepts an integer greater than or equal to zero and returns a series from 0 to the input number with exceptions listed below** | 5 | "0", "Beep!", "Boop", "I'm Sorry...", 4, 5 |
+| **Program handles an empty or invalid number and presents an error message to the user** | "" | "Error: Invalid number entered","Please try again" |
+| **Program accepts a user name and personalizes output with that name** | 3, 'Kent' | "0", "Beep!", "Boop", "I'm sorry, Kent. I'm afraid I can't do that." |
 | **Program replaces an empty or invalid user name with a default name** | "" | "Dave" |
 | **Program adds a sort up/down arrow icon and reverses the order of output if the arrow is down** | arrow icon is down | output starts at the highest number |
 | **Program cancels keypresses to the input field that are not numbers** | non-numeric charcters | do not get entered into the number input field |

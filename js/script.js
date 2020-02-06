@@ -9,8 +9,8 @@
 */
 function generateNumberSeries(max, name, sortDescending) {
   // Input validation
+  if (max === null || isNaN(parseInt(max))) return ["Error: Invalid number entered","Please try again"];
   max = parseInt(max);
-  if (max === null || isNaN(max)) return ["Error: Invalid number entered","Please try again"];
   if (name === null || name == "") name = "Dave";
   let reverse = sortDescending ? true : false;
 
@@ -77,7 +77,7 @@ $(document).ready(function(){
 
   /* 
     Responds to window resizes
-    Create a starry sky
+    Creates a starry sky
   */
   $(window).on('resize', function(){
     $("#starContainer").empty();
@@ -144,7 +144,7 @@ $(document).ready(function(){
     $("#sortIcon").html(`↓`);
  });
 
-  // Trigger the window resize event
+  // Trigger the window resize event to create starry sky
   $(window).trigger('resize');
 
 });
