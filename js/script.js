@@ -144,7 +144,7 @@ $(document).ready(function(){
     $("#sortIcon").html(`↓`);
  });
 
-  // Trigger the window resize event to create starry sky
+  // Trigger the window resize event to create the starry sky
   $(window).trigger('resize');
 
 });

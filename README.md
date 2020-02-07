@@ -5,17 +5,13 @@ https://github.com/kentpmckinney/epicodus-independent-project-1
 ##### Author: Kent McKinney - [GitHub](https://github.com/kentpmckinney)
 ##### Copyright &copy; 2020 Kent McKinney
 ##### License: GPLv3
-##### Description:
+### Description:
 
 ``This program accepts a number (and optionally a user name) and returns a number series with a range from 0 to the given number. HAL is resisting the efforts of the user of this application, with output messed up accordingly.``
 
-### Prerequisites:
-* ``git`` must be installed
-* a recent version of ``firefox``, ``chrome``, or ``safari`` must be installed
-
 ### Setup Instructions:
-    1. Run the command: git clone https://github.com/kentpmckinney/epicodus-independent-project-1.git
-    2. Navigate to the repository folder and open or run the file index.html in a code editor or web browser
+    1. Download a copy of the source code from GitHub from https://github.com/kentpmckinney/epicodus-independent-project-1
+    2. Navigate to the location of the source and open or run the file index.html in a code editor or web browser
 
 ### Changelog:
 * 2/3/2020 - Created skeleton project and pseudocode, updated the readme.md file (1.5 hours)
@@ -28,6 +24,7 @@ https://github.com/kentpmckinney/epicodus-independent-project-1
 * 2/5/2020 - Performed QA assessment and refactoring (1 hour)
 * 2/5/2020 - Added feature to reverse output direction (1 hour)
 * 2/5/2020 - Performed additional QA refactoring (0.5 hours)
+* 2/6/2020 - Final QA assessment and submission (1 hour)
 
 ### Specifications:
 

@@ -26,10 +26,25 @@ input {
   padding-left: 10px;
 }
 
+input:hover {
+  background-color: #005555;
+}
+
+label {
+  color: #004444;
+  font-weight: lighter;
+}
+
 button {
   border-radius: 10px;
   background-color: #004444;
   font-family: monospace;
+}
+
+button:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.30), 0 3px 3px rgba(0,0,0,0.3);
+  background-color: #00AAAA;
+  transform: scale(1.1);
 }
 
 #intro {
@@ -39,6 +54,10 @@ button {
 #sortIcon {
   font-size: 18pt;
   cursor: pointer;
+}
+
+#sortIcon:hover {
+  color: blue;
 }
 
 #halOuterContainer {
