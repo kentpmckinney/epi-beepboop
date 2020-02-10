@@ -2,7 +2,6 @@
   BUSINESS LOGIC
 */
 
-
 /*
   Creates a number series
   HAL messes with the output by replacing certain numbers with text messages
@@ -35,20 +34,14 @@ function generateNumberSeries(max, name, sortDescending) {
   return series;
 }
 
-
 /*
   Generates a random number from zero to max
 */
 function rand(max) { return Math.floor(Math.random() * (max+1)); }
 
-
-
-
-
 /* ****************************************************************************************
   USER INTERFACE
 */
-
 
 /*
   Creates a star with random attributes
@@ -68,12 +61,10 @@ function createStar() {
   return star;
 }
 
-
 /*
   $(document).ready() executes after the page loads
 */
 $(document).ready(function(){
-
 
   /* 
     Responds to window resizes
@@ -85,7 +76,6 @@ $(document).ready(function(){
       $("#starContainer").append(createStar());
     }
   });
-
 
   /*
     Responds to key presses on the input field
@@ -105,7 +95,6 @@ $(document).ready(function(){
         return;
     }
   });
-
 
   /*
     Responds to presses of the submit button
@@ -133,16 +122,12 @@ $(document).ready(function(){
     e.preventDefault();
   });
 
-
   /*
     Responds to clicks on the sort icon
   */
- $("#sortIcon").click(function(e){
-   if ($("#sortIcon").html() === `↓`)
-    $("#sortIcon").html(`↑`);
-   else 
-    $("#sortIcon").html(`↓`);
- });
+  $("#sortIcon").click(function(e){
+    ($("#sortIcon").html() === `↓`) ? $("#sortIcon").html(`↑`) : $("#sortIcon").html(`↓`);
+  });
 
   // Trigger the window resize event to create the starry sky
   $(window).trigger('resize');
