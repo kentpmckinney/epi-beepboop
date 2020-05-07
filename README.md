@@ -1,4 +1,4 @@
-<!-- Category HTML/CSS/JS -->
+<!-- Category: HTML/CSS/JS -->
 # Independent Project
 ## The Beep Boop Program
 https://github.com/kentpmckinney/epicodus-independent-project-1
