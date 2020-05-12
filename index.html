@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
-      <link rel="stylesheet" href="css/style.css"/>
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="js/script.js"></script>
-      <title>Beep Boop</title>
-  </head>
-  <body class="container">
-    <header>
-      <h1>Beep Boop - An Epicodus Independent Project</h1>
-    </header>
-    <div id="starContainer"></div>
-    <main>
-      <div id="halOuterContainer">
-        <form id="form">
-          <span>
-            <label for="number">NUMBER: </label>
-            <input id="number" placeholder="Enter Number Here" size=18/>
-            <span id="sortIcon">&uarr;</span>
-          </span>
-          <button type="submit">Submit</button>
-        </form>
-        <div id="halInnerContainer">
-          <div id="halDisplay">
-            <article id="intro">
-              <div>Beep Boop v1.0 - An Epicodus Independent Project</div>
-              <div>Copyright &copy; 2020 Kent McKinney</div>
-              <div>&nbsp;</div>
-              <div>Instructions:</div>
-              <div>&nbsp;</div>
-              <div>1. Enter a number in the input field above</div>
-              <div>2. (Optional) Enter a user name below</div>
-              <div>3. (Optional) Change the sort order (click on arrow)</div>
-              <div>4. Choose the 'Submit' button</div>
-            </article>
-          </div>
-          <div id="notice">
-              <label for="number">USERNAME: </label>
-              <input id="name" placeholder="Enter Username Here" size=20/>
-          </div>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script   src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <title>Beep Boop</title>
+</head>
+
+<body class="container">
+  <div id="starContainer"></div>
+  <main>
+    <div id="halOuterContainer">
+      <form id="form">
+        <span>
+          <label for="number">NUMBER: </label>
+          <input id="number" placeholder="Enter Number Here" size=18 />
+          <span id="sortIcon">&uarr;</span>
+        </span>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="halInnerContainer">
+        <div id="halDisplay">
+          <article id="intro">
+            <div>Beep Boop</div>
+            <div>Copyright &copy; 2020 Kent McKinney</div>
+            <div>&nbsp;</div>
+            <div>Instructions:</div>
+            <div>&nbsp;</div>
+            <div>1. Enter a number in the input field above</div>
+            <div>2. (Optional) Enter a user name below</div>
+            <div>3. (Optional) Change the sort order (click on arrow)</div>
+            <div>4. Choose the 'Submit' button</div>
+          </article>
+        </div>
+        <div id="notice">
+          <label for="number">USERNAME: </label>
+          <input id="name" placeholder="Enter Username Here" size=20 />
         </div>
       </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
+
 </html>

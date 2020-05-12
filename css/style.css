@@ -11,13 +11,6 @@ header {
   text-align: center;
 }
 
-h1 {
-  color: white;
-  animation-name: fade-out;
-  animation-duration: 10s;
-  animation-fill-mode: forwards;
-}
-
 input {
   border-radius: 10px;
   background-color: #004444;
