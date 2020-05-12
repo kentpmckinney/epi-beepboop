@@ -1,31 +1,63 @@
-<!-- Category: HTML/CSS/JS -->
-# Independent Project
-## The Beep Boop Program
-https://github.com/kentpmckinney/epicodus-independent-project-1
+<!-- Category: Epicodus;HTML/CSS/JS -->
+# Beep Boop
 
-##### Author: Kent McKinney - [GitHub](https://github.com/kentpmckinney)
-##### Copyright &copy; 2020 Kent McKinney
-##### License: GPLv3
-### Description:
+This program accepts a number (and optionally a user name) and returns a number series with a range from 0 to the given number. HAL is resisting the efforts of the user of this application, with output messed up accordingly.
 
-``This program accepts a number (and optionally a user name) and returns a number series with a range from 0 to the given number. HAL is resisting the efforts of the user of this application, with output messed up accordingly.``
+https://github.com/kentpmckinney/epi-beepboop
 
-### Setup Instructions:
-    1. Download a copy of the source code from GitHub from https://github.com/kentpmckinney/epicodus-independent-project-1
-    2. Navigate to the location of the source and open or run the file index.html in a code editor or web browser
+## Previewing this Project
 
-### Changelog:
-* 2/3/2020 - Created skeleton project and pseudocode, updated the readme.md file (1.5 hours)
-* 2/4/2020 - Updated readme.md, implement business logic, implement basic user interface features (1 hour)
-* 2/4/2020 - Enhanced the user interface (2 hours)
-* 2/4/2020 - Adds user name feature (0.5 hours)
-* 2/4/2020 - Explored starry sky theme (0.5 hours)
-* 2/5/2020 - Refactored code (1 hour)
-* 2/5/2020 - Added variety to star attributes (0.5 hours)
-* 2/5/2020 - Performed QA assessment and refactoring (1 hour)
-* 2/5/2020 - Added feature to reverse output direction (1 hour)
-* 2/5/2020 - Performed additional QA refactoring (0.5 hours)
-* 2/6/2020 - Final QA assessment and submission (1 hour)
+This project is hosted at: https://kentpmckinney.github.io/epi-beepboop
+
+## Working with the Source Code
+
+The following instructions explain how to set up a development environment for this project on MacOS. Steps will differ depending on the operating system.
+
+### Prerequisites
+
+The following software must be installed and properly configured on the target machine. 
+
+```
+An updated web browser (Internet Explorer is not compatible)
+```
+```
+Git (optional but recommended)
+```
+
+### Setting up a Development Environment
+
+1. Download a copy of the source code from: https://github.com/kentpmckinney/epi-beepboop
+   or clone using the repository link: https://github.com/kentpmckinney/epi-beepboop.git
+2. Navigate to the folder location of the source files in Finder or in the Terminal
+3. Launch a web browser so that it opens index.html
+
+## Running Automated Tests
+
+how to run the automated tests
+
+```
+example
+```
+
+## Deployment
+
+
+
+## Technologies Used
+
+* JavaScript
+* HTML
+* CSS
+
+## Authors
+
+Kent McKinney - [GitHub](https://github.com/kentpmckinney) - [LinkedIn](https://www.linkedin.com/in/kentpmckinney/)
+
+### Copyright &copy; 2020 Kent P. McKinney
+
+## Acknowledgments
+
+
 
 ### Specifications:
 
