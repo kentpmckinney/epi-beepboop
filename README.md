@@ -57,7 +57,7 @@ Kent McKinney - [GitHub](https://github.com/kentpmckinney) - [LinkedIn](https://
 
 ## Acknowledgments
 
-
+https://www.learnhowtoprogram.com/introduction-to-programming/javascript-and-jquery/javascript-and-jquery-independent-project
 
 ### Specifications:
 
