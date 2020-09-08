@@ -1,11 +1,8 @@
-/* ****************************************************************************************
-  BUSINESS LOGIC
+/*
+  Business Logic
 */
 
-/*
-  Creates a number series
-  HAL messes with the output by replacing certain numbers with text messages
-*/
+/* Creates a number series; HAL messes with the output */
 function generateNumberSeries(max, name, sortDescending) {
   // Input validation
   if (max === null || isNaN(parseInt(max))) return ["Error: Invalid number entered","Please try again"];
@@ -34,18 +31,14 @@ function generateNumberSeries(max, name, sortDescending) {
   return series;
 }
 
-/*
-  Generates a random number from zero to max
-*/
+/* Generates a random number from zero to max */
 function rand(max) { return Math.floor(Math.random() * (max+1)); }
 
-/* ****************************************************************************************
-  USER INTERFACE
+/*
+  User Interface Logic
 */
 
-/*
-  Creates a star with random attributes
-*/
+/* Creates a star with random attributes */
 function createStar() {
   let star = $("<div />");
   let size = rand(2)+1;
@@ -61,15 +54,10 @@ function createStar() {
   return star;
 }
 
-/*
-  $(document).ready() executes after the page loads
-*/
+/* $(document).ready() executes after the page loads */
 $(document).ready(function(){
 
-  /* 
-    Responds to window resizes
-    Creates a starry sky
-  */
+  /* Responds to window resizes; Creates a starry sky */
   $(window).on('resize', function(){
     $("#starContainer").empty();
     for (let i = 0; i < 100; i++) {
@@ -77,9 +65,7 @@ $(document).ready(function(){
     }
   });
 
-  /*
-    Responds to key presses on the input field
-  */
+  /* Responds to key presses on the input field */
   $('#number').bind('keypress',function(e) {
     let event = e || window.event;
     let keycode = event.keyCode || event.which;
@@ -96,9 +82,7 @@ $(document).ready(function(){
     }
   });
 
-  /*
-    Responds to presses of the submit button
-  */
+  /* Responds to presses of the submit button */
   $("#form").submit(function(e){
     // Get input from the user interface
     let inputNumber = $("#number").val();
@@ -106,7 +90,7 @@ $(document).ready(function(){
     let sortDescending = $("#sortIcon").html() === `↓` ? true : false;
 
     // Clear existing output text from the user interface
-    $("#halDisplay").empty();
+    $("#display").empty();
 
     // Perform business logic
     let series = generateNumberSeries(inputNumber, inputName, sortDescending);
@@ -115,21 +99,19 @@ $(document).ready(function(){
     series.forEach(function(value){
       let div = document.createElement("div")
       div.innerText = `${value}`;
-      $("#halDisplay").append(div);
+      $("#display").append(div);
     });
 
     // Prevent screen refresh on form submission
     e.preventDefault();
   });
 
-  /*
-    Responds to clicks on the sort icon
-  */
+  /* Responds to clicks on the sort icon */
   $("#sortIcon").click(function(e){
     ($("#sortIcon").html() === `↓`) ? $("#sortIcon").html(`↑`) : $("#sortIcon").html(`↓`);
   });
 
-  // Trigger the window resize event to create the starry sky
+  /* Trigger the window resize event to create the starry sky */
   $(window).trigger('resize');
 
 });
