@@ -1,4 +1,6 @@
 <!-- Category: Epicodus;HTML/CSS/JS -->
+<!-- Portfolio: Yes -->
+
 # Beep Boop
 
 This program accepts a number (and optionally a user name) and returns a number series with a range from 0 to the given number. HAL is resisting the efforts of the user of this application, with output messed up accordingly.
