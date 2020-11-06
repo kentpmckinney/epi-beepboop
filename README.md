@@ -11,6 +11,7 @@
 <br/>
 
 ### Previewing this Project
+![Screenshot](http://kentpmckinney.github.io/epi-beepboop/epi-beepboop.gif)
 
 <br/>
 
