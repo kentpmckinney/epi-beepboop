@@ -1,12 +1,12 @@
 
 # Beep Boop
 
-A more elaborate version of 'Fizzbuzz'
+An elaborate version of 'fizzbuzz' with a '2001: A Space Odyssey' theme
 
   <br/>
 
 ### How to Use
-
+Enter a number representing how far the fizzbuzz operation should count to. Optionally, enter a name at the bottom.
 
 <br/>
 
