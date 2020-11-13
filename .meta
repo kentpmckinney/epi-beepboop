@@ -1,7 +1,13 @@
 Categories: `Epicodus;HTML/CSS/JS;Featured`
 Technologies: `JavaScript;HTML;CSS;jQuery;Bootstrap`
-Summary: `A more elaborate version of 'Fizzbuzz'`
+Summary: `An elaborate version of 'fizzbuzz' with a '2001: A Space Odyssey' theme`
+Description: ``
+Instructions: `Enter a number representing how far the fizzbuzz operation should count to. Optionally, enter a name at the bottom.`
 Demolink: ``
+Demo: `Yes`
+Source: `Yes`
+Notes: ``
 Screenshots: `http://kentpmckinney.github.io/epi-beepboop/epi-beepboop.gif`
 Acknowledgments: `https://www.learnhowtoprogram.com/introduction-to-programming/javascript-and-jquery/javascript-and-jquery-independent-project`
 Portfolio: `Yes`
+External: `No`
