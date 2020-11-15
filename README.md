@@ -3,7 +3,7 @@
 
 An elaborate version of 'fizzbuzz' with a '2001: A Space Odyssey' theme
 
-  <br/>
+<br/>
 
 ### How to Use
 Enter a number representing how far the fizzbuzz operation should count to. Optionally, enter a name at the bottom.
@@ -19,13 +19,13 @@ A [live demo](https://kentpmckinney.github.io/epi-beepboop) of this application 
 
 ### Technologies Used
 
-  <code>JavaScript
+<code>JavaScript
 HTML
 CSS
 jQuery
 Bootstrap</code>
-  <br/>
-  <br/>
+<br/>
+<br/>
 
 ### Working with the Source Code
 
@@ -67,7 +67,7 @@ The following steps are meant to be a quick way to get the project up and runnin
 
 The files provided are ready to be deployed directly to a web server.
 
-<!-- </details> -->
+</details>
 
 <br/>
 
